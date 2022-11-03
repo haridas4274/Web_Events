@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bxSlider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <style>
+        img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+   
+
+<ul class="bxslider">
+  <li><img src="imgaes/img (1).png" title="check right image"/></li>
+  <li><img src="imgaes/img (2).jpeg" title="check right image"/></li>
+  <li><img src="imgaes/img (3).jpeg" title="check right image"/></li>
+  <li><img src="imgaes/img (4).jpeg" title="check right image"/></li>
+  <li><img src="imgaes/img (5).jpeg" title="check right image"/></li>
+</ul>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+
+                     /*
+                you make any changes go to this site
+                https://bxslider.com/options/
+                        */
+
+
+	$(document).ready(function(){
+		$('.bxslider').bxSlider(
+            {
+            mode: 'horizontal',
+			moveSlides: 1,
+			slideMargin: 40,
+			infiniteLoop: true,
+			slideWidth: 660,
+			minSlides: 2,
+			maxSlides: 3,
+			speed: 800,
+        }
+        );
+
+	});
+</script>
+</body>
+</html>
